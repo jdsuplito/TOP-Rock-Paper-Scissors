@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./TOP-RPS-Assets/TOP-RPS-MainCss/style.css">
+  <title>TOP-Rock-Paper-Scissors</title>
+</head>
+<body>
+  
+  <div class="main-body">
+    <header class="head">
+      <img class="head-img-logo" src="./TOP-RPS-Assets/TOP-RPS-Media/Adventure-Time-Logo.png" alt="">
+      <div class="head-div">
+        <h1 class="div-h1-rock">ROCK</h1>
+        <h1 class="div-h1-scissor">SCISSORS</h1>
+        <h1 class="div-h1-paper">PAPER</h1>
+      </div>
+    </header>
+    <audio id="main-audio" controls autoplay>
+      <source src="./TOP-RPS-Assets/TOP-RPS-Media/Adventure-Time-Lofi.mp3" type="audio/mpeg">
+    </audio>
+    <main class="main-content">
+      <h2 class="main-intro-h2">Hello and Welcome to the Game!</h2>
+      <p class="main-intro-p">In this game, you will take on the role of Finn, so go ahead and defeat Bmo!</p>
+      <div class="main-content-con">
+        <div class="main-div-con">
+          <div class="div-life">
+            <img class="div-life-img" src="./TOP-RPS-Assets/TOP-RPS-Media/b.png" alt="">
+            <img class="div-life-img" src="./TOP-RPS-Assets/TOP-RPS-Media/b.png" alt="">
+            <img class="div-life-img" src="./TOP-RPS-Assets/TOP-RPS-Media/b.png" alt="">
+            <img class="div-life-img" src="./TOP-RPS-Assets/TOP-RPS-Media/b.png" alt="">
+            <img class="div-life-img" src="./TOP-RPS-Assets/TOP-RPS-Media/b.png" alt="">
+          </div>
+          <div class="div-con">
+            <div class="div-player-icon">
+              <img id="finn-img" class="div-player-img" src="./TOP-RPS-Assets/TOP-RPS-Media/fin1.png" alt="">
+              <h4 class="div-player-name">Finn (You)</h4>
+            </div>
+            <div class="div-picker">
+              <p class="div-picker-p">You Pick :</p>
+              <div id="picked-container" class="div-pick-con">
+                <img id="picked-rock" class="div-pick-hand" src="./TOP-RPS-Assets/TOP-RPS-Media/r.png" alt="">
+                <img id="picked-scissors" class="div-pick-hand" src="./TOP-RPS-Assets/TOP-RPS-Media/s.png" alt="">
+                <img id="picked-paper" class="div-pick-hand" src="./TOP-RPS-Assets/TOP-RPS-Media/p.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="div-score">
+            <p class="div-score-p">Your Score :</p>
+            <h1 class="div-score-h1"><span id="player-score">0</span> / <span class="win-score">5</span></h1>
+          </div>
+        </div>
+        <div class="main-div-vs">
+          <h1 class="main-win-lose-draw"><span id="game-win-lose-draw">You Win!</span></h1>
+          <h1 class="main-vs">Vs</h1>
+          <div class="main-try-div">
+            <h2 class="try-div-h2">Try Again?</h2>
+            <div class="try-btn-con">
+              <button class="try-btns-yes">Yes</button>
+              <button class="try-btns-no">No</button>
+            </div>
+          </div>
+        </div>
+        <div class="main-div-con">
+          <div class="div-life1">
+            <img class="div-life-img1" src="./TOP-RPS-Assets/TOP-RPS-Media/g.png" alt="">
+            <img class="div-life-img1" src="./TOP-RPS-Assets/TOP-RPS-Media/g.png" alt="">
+            <img class="div-life-img1" src="./TOP-RPS-Assets/TOP-RPS-Media/g.png" alt="">
+            <img class="div-life-img1" src="./TOP-RPS-Assets/TOP-RPS-Media/g.png" alt="">
+            <img class="div-life-img1" src="./TOP-RPS-Assets/TOP-RPS-Media/g.png" alt="">
+          </div>
+          <div class="div-con1">
+            <div class="div-picker">
+              <p class="div-picker-p">Bmo Pick :</p>
+              <div id="computer-pick-con" class="div-pick-con">
+                <img id="com-rock" class="div-pick-hand" src="./TOP-RPS-Assets/TOP-RPS-Media/r.png" alt="">
+                <img id="com-scissors" class="div-pick-hand" src="./TOP-RPS-Assets/TOP-RPS-Media/s.png" alt="">
+                <img id="com-paper" class="div-pick-hand" src="./TOP-RPS-Assets/TOP-RPS-Media/p.png" alt="">
+              </div>
+            </div>
+            <div class="div-player-icon1">
+              <img id="bmo-img" class="div-player-img" src="./TOP-RPS-Assets/TOP-RPS-Media/bmo1.png" alt="">
+              <h4 class="div-player-name1">Bmo</h4>
+            </div>
+          </div>
+          <div class="div-score">
+            <p class="div-score-p1">Bmo's Score :</p>
+            <h1 class="div-score-h1"><span id="com-score">0</span> / <span class="win-score">5</span></h1>
+          </div>
+        </div>
+      </div>
+      <div id="hand-user" class="div-hand-con">
+        <img id="rock" class="div-hand" src="./TOP-RPS-Assets/TOP-RPS-Media/r.png" alt="">
+        <img id="scissors" class="div-hand" src="./TOP-RPS-Assets/TOP-RPS-Media/s.png" alt="">
+        <img id="paper" class="div-hand" src="./TOP-RPS-Assets/TOP-RPS-Media/p.png" alt="">
+      </div>
+    </main>
+    
+  </div>
+  
+  
+  <script src="./TOP-RPS-Assets/TOP-RPS-MainJs/script.js"></script>
+</body>
+</html>
