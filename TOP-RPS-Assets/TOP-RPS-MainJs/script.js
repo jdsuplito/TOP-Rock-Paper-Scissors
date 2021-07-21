@@ -65,7 +65,7 @@ const draw = () => {
 };
 
 const userWin = () => {
-  document.getElementById('bmo-img').src = "/TOP-RPS-Assets/TOP-RPS-Media/bmo.png";
+  document.getElementById('bmo-img').src = "./TOP-RPS-Assets/TOP-RPS-Media/bmo.png";
   document.querySelector('.main-win-lose-draw').style.display = "block";
   document.getElementById('game-win-lose-draw').style.color = "#0593ff";
   document.getElementById('game-win-lose-draw').textContent = "Finn Wins!";
@@ -98,7 +98,7 @@ const toggleHands = () => {
 }
 
 const computerWin = () => {
-  document.getElementById('finn-img').src = "/TOP-RPS-Assets/TOP-RPS-Media/fin.png";
+  document.getElementById('finn-img').src = "./TOP-RPS-Assets/TOP-RPS-Media/fin.png";
   document.querySelector('.main-win-lose-draw').style.display = "block";
   document.getElementById('game-win-lose-draw').style.color = "#00b686";
   document.getElementById('game-win-lose-draw').textContent = "Bmo Wins!";
@@ -108,7 +108,7 @@ const tryAgain = () => {
   document.querySelector('.main-vs').style.display = "none";
   document.querySelector('.main-try-div').style.display = "block";
   document.getElementById('main-audio').pause();
-  var islandSong = new Audio('/TOP-RPS-Assets/TOP-RPS-Media/Adventure-Time-Island-Song.mp3');
+  var islandSong = new Audio('./TOP-RPS-Assets/TOP-RPS-Media/Adventure-Time-Island-Song.mp3');
   toggleHands();
   islandSong.play();
 };
