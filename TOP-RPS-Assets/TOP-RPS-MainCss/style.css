@@ -212,7 +212,7 @@ background: #009286;
 .main-win-lose-draw {
   display: none;
   color: #f0f0f0;
-  text-shadow: 0 0 20px #f0f0f0;
+  text-shadow: 0 0 20px #bfbfbf;
   font-size: 5rem;
 }
 
